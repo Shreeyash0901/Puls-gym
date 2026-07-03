@@ -1,0 +1,40 @@
+```
+└── 📁pulse
+    └── 📁pulse-athletic-club
+        └── 📁public
+            ├── favicon.svg
+            ├── icons.svg
+        └── 📁src
+            └── 📁assets
+                ├── hero.png
+                ├── react.svg
+                ├── vite.svg
+            └── 📁components
+                └── 📁common
+                └── 📁layout
+                └── 📁sections
+                ├── Coaches.jsx
+                ├── Footer.jsx
+                ├── Hero.jsx
+                ├── Join.jsx
+                ├── Membership.jsx
+                ├── Nav.jsx
+                ├── Programs.jsx
+                ├── PulseLine.jsx
+                ├── Stats.jsx
+                ├── ThePulse.jsx
+            └── 📁data
+            └── 📁hooks
+            └── 📁styles
+            └── 📁utils
+            ├── App.jsx
+            ├── index.css
+            ├── main.jsx
+        ├── .gitignore
+        ├── eslint.config.js
+        ├── index.html
+        ├── package-lock.json
+        ├── package.json
+        ├── README.md
+        └── vite.config.js
+```

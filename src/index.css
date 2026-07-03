@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #dce1e6;
+  --bg-warm: #e3e7ea;
+  --panel: #f5f6f7;
+  --ink: #14171a;
+  --ink-soft: #4b5257;
+  --cobalt: #2f5cff;
+  --cobalt-dark: #1e3fcc;
+  --ember: #ff5a1f;
+  --line: #b9c1c8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Work Sans", sans-serif;
+}
+
+.font-display {
+  font-family: "Anton", sans-serif;
+  letter-spacing: 0.01em;
+}
+
+.font-mono {
+  font-family: "JetBrains Mono", monospace;
+}
+
+::selection {
+  background: var(--cobalt);
+  color: white;
+}
+
+.clip-diag {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 48px), 0 100%);
+}
+
+.clip-diag-rev {
+  clip-path: polygon(0 48px, 100% 0, 100% 100%, 0 100%);
+}
+
+.noise::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+
+  pointer-events: none;
+}
+
+.focus-ring:focus-visible {
+  outline: 3px solid var(--cobalt);
+  outline-offset: 3px;
+}
